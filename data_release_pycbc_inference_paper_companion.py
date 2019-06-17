@@ -78,8 +78,8 @@ import warnings
 warnings.filterwarnings('ignore')
 import h5py
 from IPython.display import Image
-get_ipython().run_line_magic('matplotlib', 'inline')
-get_ipython().run_line_magic('config', "InlineBackend.figure_format = 'retina'")
+# get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('config', "InlineBackend.figure_format = 'retina'")
 from pycbc.io.inference_hdf import InferenceFile
 import numpy
 from matplotlib import pyplot as plt
