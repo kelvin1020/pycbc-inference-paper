@@ -138,8 +138,8 @@ print mchirp
 import argparse
 import logging
 import numpy
-get_ipython().run_line_magic('matplotlib', 'inline')
-get_ipython().run_line_magic('config', "InlineBackend.figure_format = 'retina'")
+# get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('config', "InlineBackend.figure_format = 'retina'")
 import matplotlib
 import pycbc
 import pycbc.version
