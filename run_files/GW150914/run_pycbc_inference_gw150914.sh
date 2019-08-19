@@ -56,9 +56,9 @@ F_HIGHPASS=15
 F_MIN=20
 N_WALKERS=200
 N_TEMPS=20
-N_SAMPLES=8000
-N_CHECKPOINT=2000
-PROCESSING_SCHEME=mkl
+N_SAMPLES=80
+N_CHECKPOINT=20
+PROCESSING_SCHEME=numpy
 
 # the following sets the number of cores to use; adjust as needed to
 # your computer's capabilities
