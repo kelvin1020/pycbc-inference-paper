@@ -1,5 +1,5 @@
 pycbc_inference_plot_posterior --verbose \
-    --input-file /home/ysc/Documents/pycbc-inference-paper/run_files/GW150914/gw150914_posteriors_thinned.hdf \
+    --input-file ./gw150914_posteriors_thinned.hdf \
     --output-file q_chieff_gw150914.png \
     --plot-density \
     --density-cmap Purples \
@@ -15,7 +15,7 @@ pycbc_inference_plot_posterior --verbose \
 
 
 pycbc_inference_plot_posterior --verbose \
-    --input-file /home/ysc/Documents/pycbc-inference-paper/run_files/GW150914/gw150914_posteriors_thinned.hdf \
+    --input-file ./gw150914_posteriors_thinned.hdf \
     --output-file iota_dl_gw150914.png \
     --plot-density \
     --density-cmap Purples \

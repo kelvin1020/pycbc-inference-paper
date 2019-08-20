@@ -1,0 +1,9 @@
+ipykernel
+h5py==2.7.1 
+matplotlib==2.2.3      
+
+lalsuite
+PyCBC==1.12.3
+
+ligo-segments==1.0.1   
+lscsoft-glue==1.59.3     
