@@ -1,4 +1,5 @@
 ipykernel
+jupyter
 h5py==2.7.1 
 matplotlib==2.2.3      
 
