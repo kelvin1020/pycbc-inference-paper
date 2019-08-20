@@ -78,8 +78,8 @@ import warnings
 warnings.filterwarnings('ignore')
 import h5py
 from IPython.display import Image
-get_ipython().run_line_magic('matplotlib', 'inline')
-get_ipython().run_line_magic('config', "InlineBackend.figure_format = 'retina'")
+# get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('config', "InlineBackend.figure_format = 'retina'")
 from pycbc.io.inference_hdf import InferenceFile
 import numpy
 from matplotlib import pyplot as plt
@@ -138,8 +138,8 @@ print mchirp
 import argparse
 import logging
 import numpy
-get_ipython().run_line_magic('matplotlib', 'inline')
-get_ipython().run_line_magic('config', "InlineBackend.figure_format = 'retina'")
+# get_ipython().run_line_magic('matplotlib', 'inline')
+# get_ipython().run_line_magic('config', "InlineBackend.figure_format = 'retina'")
 import matplotlib
 import pycbc
 import pycbc.version
@@ -581,32 +581,34 @@ fig, axis_dict = create_multidim_plot(
 fig.show()
 
 
-# ### Fig 4b : posterior density plot for $q - \chi_{\mathrm{eff}}$
-
-# In[40]:
 
 
-get_ipython().system('pycbc_inference_plot_posterior --verbose     --input-file ./gw150914_posteriors_thinned.hdf     --output-file q_chieff_gw150914.png     --plot-density     --density-cmap Purples     --z-arg logplr     --plot-contours     --contour-color purple     --plot-marginal     --parameters "(primary_mass(mass1, mass2))/(secondary_mass(mass1, mass2)):\\$q$"                  chi_eff     --contour-color "purple"     --maxs "(primary_mass(mass1, mass2))/(secondary_mass(mass1, mass2)):2"')
+# # ### Fig 4b : posterior density plot for $q - \chi_{\mathrm{eff}}$
+
+# # In[40]:
 
 
-# In[41]:
+# get_ipython().system('pycbc_inference_plot_posterior --verbose     --input-file ./gw150914_posteriors_thinned.hdf     --output-file q_chieff_gw150914.png     --plot-density     --density-cmap Purples     --z-arg logplr     --plot-contours     --contour-color purple     --plot-marginal     --parameters "(primary_mass(mass1, mass2))/(secondary_mass(mass1, mass2)):\\$q$"                  chi_eff     --contour-color "purple"     --maxs "(primary_mass(mass1, mass2))/(secondary_mass(mass1, mass2)):2"')
 
 
-Image('q_chieff_gw150914.png')
+# # In[41]:
 
 
-# ### Fig 4c : posterior density plot for $\iota - d_L$
-
-# In[9]:
+# Image('q_chieff_gw150914.png')
 
 
-get_ipython().system('pycbc_inference_plot_posterior --verbose     --input-file ./gw150914_posteriors_thinned.hdf     --output-file iota_dl_gw150914.png     --plot-density     --density-cmap Purples     --z-arg logplr     --plot-contours     --contour-color purple     --plot-marginal     --parameters "inclination*180/pi:$\\iota$ (deg)"                   distance     --mins "inclination*180/pi:0"     --maxs "inclination*180/pi:180" ')
+# # ### Fig 4c : posterior density plot for $\iota - d_L$
+
+# # In[9]:
 
 
-# In[10]:
+# get_ipython().system('pycbc_inference_plot_posterior --verbose     --input-file ./gw150914_posteriors_thinned.hdf     --output-file iota_dl_gw150914.png     --plot-density     --density-cmap Purples     --z-arg logplr     --plot-contours     --contour-color purple     --plot-marginal     --parameters "inclination*180/pi:$\\iota$ (deg)"                   distance     --mins "inclination*180/pi:0"     --maxs "inclination*180/pi:180" ')
 
 
-Image('iota_dl_gw150914.png')
+# # In[10]:
+
+
+# Image('iota_dl_gw150914.png')
 
 
 
